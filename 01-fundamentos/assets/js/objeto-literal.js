@@ -1,4 +1,4 @@
-let personaje = {
+const personaje = {
     nombre : 'Tony Stark',
     codeName: 'Iron Man',
     vivo: false,

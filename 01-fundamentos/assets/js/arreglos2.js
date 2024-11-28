@@ -1,4 +1,3 @@
-
 let juegos = ['Zelda', 'Mario', 'Metroid', 'Chrono'];
 console.log('Largo:', juegos.length);
 
