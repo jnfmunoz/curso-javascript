@@ -2,7 +2,7 @@
 //     return { nombre, apellido }
 // };
 
-const crearPersona = (nombre, apellido) => ({ nombre, apellido });
+const crearPersona = (nombre, apellido) => ({nombre, apellido});
 
 const persona = crearPersona( 'Juan', 'Muñoz');
 console.log(persona);
@@ -18,7 +18,7 @@ const imprimeArgumentos2 = (edad, ...args) => {
 }
 
 // imprimeArgumentos(10, true, false, 'Juan', 'Hola');
-const [ casado, vivo, nombre, saludo] = imprimeArgumentos2(10, true, false, 'Juan', 'Hola');
+const [casado, vivo, nombre, saludo] = imprimeArgumentos2(10, true, false, 'Juan', 'Hola');
 console.log({casado, vivo, nombre, saludo});
 
 const {apellido:nuevoApellido} = crearPersona('Fernando', 'Herrera');
