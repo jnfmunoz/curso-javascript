@@ -67,3 +67,4 @@ const valorCarta = ( carta ) => {
 
 const valor = valorCarta(pedirCarta());
 console.log({valor})
+
