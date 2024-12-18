@@ -22,3 +22,6 @@ npm fund
 
 npm install -> https://www.npmjs.com/
 
+# JSDoc -> API documentation generartor for JavaScript
+https://jsdoc.app/about-getting-started
+
