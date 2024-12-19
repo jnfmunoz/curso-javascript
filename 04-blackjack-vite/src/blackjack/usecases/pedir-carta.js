@@ -11,3 +11,4 @@ export const pedirCarta = (deck) => {
     const carta = deck.pop();
     return carta;
 }
+
