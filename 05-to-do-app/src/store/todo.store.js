@@ -21,6 +21,7 @@ const state = {
 
 const initStore = () => {
     loadStore();
+    // console.log(state);
     console.log('Init Store 🦎');
 }
 
@@ -88,7 +89,6 @@ const deleteTodo = (todoId) => {
 const deleteCompleted = () => {
     state.todos = state.todos.filter(todo => todo.done);
     saveStateToLocalStorage();
-
 }
 
 /**
