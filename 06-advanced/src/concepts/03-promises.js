@@ -43,7 +43,7 @@ export const promiseComponent = (element) => {
     .catch(renderError);
 
     // Promise hell
-    // Forma 2 
+    // Forma 1 
     // findHero(id1)
     //     .then((hero1) =>{
     //         findHero(id2)
@@ -54,17 +54,18 @@ export const promiseComponent = (element) => {
     //     })
     //     .catch(error => renderError(error));
 
-    // Forma 1 
-    let hero1;
+    // Forma 2
+    // let hero1;
 
-    findHero(id1)
-        .then( hero => {
-            hero1 = hero;
-            return findHero(id2);
-        }).then( hero2 => {
-            renderTwoHeros(hero1, hero2);
-        })
-        .catch(renderError);
+    // findHero(id1)
+    //     .then( hero => {
+    //         hero1 = hero;
+    //         return findHero(id2);
+    //     }).then( hero2 => {
+    //         renderTwoHeros(hero1, hero2);
+    //     })
+    //     .catch(renderError);
+
 }
 
 /**
