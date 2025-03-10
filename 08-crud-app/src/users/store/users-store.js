@@ -8,6 +8,8 @@ const state = {
 
 const loadNextPage = async() => {
     await loadUsersByPage(state.currentPage + 1);
+    // throw new Error('Not implemented');
+
 }
 
 const loadPreviousPage = async() => {
