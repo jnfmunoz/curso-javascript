@@ -17,6 +17,7 @@ export const loadUsersByPage = async( page = 1 ) => {
     // console.log(data);
     // console.log("Tipo de data:", typeof data, Array.isArray(data));
     
+    // const users = data.data.map(user => localhostUserToModel(user));
     const users = data.data.map(localhostUserToModel);
     // console.log(users);
 

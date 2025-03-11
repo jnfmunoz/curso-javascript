@@ -8,7 +8,7 @@ import { User } from "../models/user"
  * @param {Like<User>} localhostUser 
  * @returns {User}
  */
-export const localhostUserToModel = ( localhostUser )=> {
+export const localhostUserToModel = ( localhostUser ) => {
 
     const {
         avatar,
