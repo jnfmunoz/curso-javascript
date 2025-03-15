@@ -1,6 +1,6 @@
 import modalHtml from './render-modal.html?raw';
-import './render-modal.css'
 import { User } from '../../models/user';
+import './render-modal.css'
 
 
 let modal, form;
@@ -11,7 +11,7 @@ let loadedUser;
  * @param {String|Number} id 
  */
 export const showModal = async( id ) => {
-    
+
     modal?.classList.remove('hide-modal');
 
     if( !id ) return;
@@ -29,8 +29,8 @@ export const hideModal = () => {
  * 
  * @param {User} user 
  */
-const setFormValue = ( user ) => {
-
+const setFormValues = ( user ) => {
+    
 }
 
 /**
