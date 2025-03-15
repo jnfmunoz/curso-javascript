@@ -3,7 +3,7 @@ import { renderAddButton } from "./presentation/render-add-button/render-add-but
 import { renderButtons } from "./presentation/render-buttons/render-buttons";
 import { renderModal } from "./presentation/render-modal/render-modal";
 import { renderTable } from "./presentation/render-table/render-table";
-import { saveUser} from "./uses-cases/save-users";
+import { saveUser} from "./uses-cases/save-user";
 
 /**
  * 
