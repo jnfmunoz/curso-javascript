@@ -25,6 +25,14 @@ const createTable = () => {
 
 /**
  * 
+ * @param {MouseEvent} e 
+ */
+const tableSelectListener = (e) => {
+    console.log(e.target);
+}
+
+/**
+ * 
  * @param {HTMLDivElement} element 
  */
 export const renderTable = (element) => {
@@ -35,6 +43,8 @@ export const renderTable = (element) => {
         element.append(table);
 
         // TODO: listeners to table
+        // table.addEventListener('click', e => tableSelectListener(e));
+        table.addEventListener('click', tableSelectListener );
 
     }
 
@@ -48,9 +58,9 @@ export const renderTable = (element) => {
                 <td>${ user.lastName }</td>
                 <td>${ user.isActive }</td>
                 <td>
-                    <a href="#/" data-id="${ user.id }">Select</a>
+                    <a href="#/" class="select-user" data-id="${ user.id }">Select</a>
                     |
-                    <a href="#/" data-id="${ user.id }">Delete</a>
+                    <a href="#/" class="delete-user" data-id="${ user.id }">Delete</a>
                 </td>
             </tr>
         `;

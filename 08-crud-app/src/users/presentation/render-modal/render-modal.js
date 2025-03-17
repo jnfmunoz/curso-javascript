@@ -1,5 +1,6 @@
 import modalHtml from './render-modal.html?raw';
 import { User } from '../../models/user';
+import { getUserById } from '../../uses-cases/get-user-by-id';
 import './render-modal.css'
 
 
@@ -15,7 +16,7 @@ export const showModal = async( id ) => {
     modal?.classList.remove('hide-modal');
 
     if( !id ) return;
-    const user = await(getUserById(id));
+    const user = await getUserById(id) ;
 
 }
 
