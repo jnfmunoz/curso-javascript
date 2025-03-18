@@ -5,7 +5,7 @@ import './render-modal.css'
 
 
 let modal, form;
-let loadedUser = { };
+let loadedUser = {};
 
 /**
  * 
@@ -33,10 +33,11 @@ export const hideModal = () => {
  * @param {User} user 
  */
 const setFormValues = ( user ) => {
-    form.querySelector('[name="firstName]').value = user.firstName;
-    form.querySelector('[name="lastName]').value = user.lastName;
-    form.querySelector('[name="balance]').value = user.balance;
-    form.querySelector('[name="isActive]').checked = user.isActive;
+
+    form.querySelector('[name="firstName"]').value = user.firstName;
+    form.querySelector('[name="lastName"]').value = user.lastName;
+    form.querySelector('[name="balance"]').value = user.balance;
+    form.querySelector('[name="isActive"]').value = user.firstName;
     
     loadedUser = user;
 
