@@ -14,6 +14,7 @@ let loadedUser = {};
 export const showModal = async( id ) => {
 
     modal?.classList.remove('hide-modal');
+    loadedUser = {};
 
     if( !id ) return;
     
@@ -37,7 +38,7 @@ const setFormValues = ( user ) => {
     form.querySelector('[name="firstName"]').value = user.firstName;
     form.querySelector('[name="lastName"]').value = user.lastName;
     form.querySelector('[name="balance"]').value = user.balance;
-    form.querySelector('[name="isActive"]').value = user.firstName;
+    form.querySelector('[name="isActive"]').checked = user.isActive;
     
     loadedUser = user;
 
@@ -67,6 +68,11 @@ export const renderModal = ( element, saveUserCallback ) => {
         e.preventDefault();
 
         const formData = new FormData(form);
+
+        if(!formData.get('isActive')){
+            formData.append('isActive', 'off');
+        }
+
         const userLike = { ...loadedUser };
 
         for(const [key, value] of formData){
